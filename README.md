@@ -27,20 +27,29 @@
    uv run main.py
    ```
 
+   или
+
+   ```bash
+   docker compose up --build
+   ```
+
 ## Структура проекта
 
 - `main.py` — основной код бота
 - `pyproject.toml` — зависимости
-- `Dockerfile` — для контейнеризации (опционально)
+- `Dockerfile` — инструкции для сборки Docker-образа
+- `compose.yaml` — конфигурация Docker Compose
+- `.env.template` — шаблон файла окружения
 - `README.md` — описание проекта
 
 ## Используемые технологии
 
 - [python-telegram-bot](https://python-telegram-bot.org/)
 - [pydantic-ai](https://github.com/pydantic/pydantic-ai)
+- [crawl](https://docs.crawl4ai.com)
+- [playwright](https://playwright.dev/python/)
 - [Mistral](https://mistral.ai/)
 - [pdfplumber](https://github.com/jsvine/pdfplumber)
-- [playwright](https://playwright.dev/python/)
 
 ## Контакты
 
