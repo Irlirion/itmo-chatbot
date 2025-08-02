@@ -33,7 +33,7 @@ WORKDIR /app
 # Place executables in the environment at the front of the path
 ENV PATH="/app/.venv/bin:$PATH"
 
-RUN playwright install --with-deps
+RUN playwright install chromium --with-deps
 
 # Run the FastAPI application by default
 CMD ["python", "main.py"]
